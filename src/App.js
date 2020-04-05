@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'react-input-range/lib/css/index.css'
 
-function App() {
+import React from 'react'
+import { Route, Switch, Redirect } from "react-router-dom";
+
+import HomePage from './pages/home/HomePage'
+import HotelListPage from './pages/list/HotelListPage'
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Switch>
+        <Route path="/web" exact component={HomePage} />
+        <Route path="/web/hotels" exact component={HotelListPage} />
+        <Redirect from="*" to="/web" />
+      </Switch>
+    </>
+  )
 }
-
-export default App;

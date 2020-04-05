@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .HotelListPage {
+    background: #EEEEEE;
+    color: #000000;
+    min-height: 100vh;
+  }
+  
+  .filterWrapper {
+    width: 275px;
+    padding: 50px 50px;
+    position: absolute;
+    .filterTitle {
+      margin-bottom: 20px;
+    }
+    .filter {
+      background: #FFFFFF;
+      border: 1px solid lightgray;
+      height: 600px;
+      padding: 24px;
+      h4 {
+        margin: 0;
+        margin-bottom: 20px;
+      }
+      .rateFilter {
+        
+      }
+    }
+  }
+  
+  .hotelWatchRecentWrapper {
+    position: absolute;
+    height: 63px;
+    left: 400px;
+    top: 50px;
+    .hotelWatchRecentTitle {
+      margin-bottom: 20px;
+    }
+    .hotelWatchRecent {
+      background: #FFFFFF;
+      border: 1px solid lightgray;
+      padding: 15px
+    }
+    .watchRecentButton {
+      width: 80px;
+      height: 40px;
+      background-color: #a6a6a6;
+      border: none;
+      color:#000;
+      padding: 15px 0;
+      text-align: center;
+      text-decoration: none;
+      margin: 4px;
+      cursor: pointer;
+      &:focus {
+        outline:0;
+      }
+    }
+  }
+  
+  .HotelList {
+    width: 650px;
+    position: relative;
+    left: 400px;
+    top: 200px;
+  }
+
+  .hotelItemWrapper {
+    width: 650px;
+    height: 200px;
+    background: #FFFFFF;
+    margin-bottom: 24px;
+    .hotelThumbnail, img {
+      width: 260px;
+      height: 200px;
+      position: absolute;
+    }
+    .hotelContent {
+      position: absolute;
+      left: 286px;
+      font-size: 14px;
+      .freeFacility {
+        color: #1FBC41;
+        span {
+          font-size: 12px;
+          border: 1px solid #1FBC41;
+          border-radius: 5px;
+          padding: 2px;
+          margin-right: 5px;
+        }
+      }
+      .rate {
+        margin-top: 20px;
+      }
+      .totalReviewCount {
+        width: 80px;
+        font-size: 10px;
+        color: #777777;
+        position: absolute;
+        left: 250px;
+        top: 20px;
+      }
+      .reviewScore {
+        position: absolute;
+        font-size: 12px;
+        text-align: center;
+        color: #fff;
+        background: #060CAB;
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        padding: 8px;
+        left: 325px;
+        top: 10px;
+      }
+      .price {
+        position: absolute;
+        font-size: 13px;
+        background: #479AFC;
+        color: #fff;
+        padding: 4px;
+        width: 70px;
+        left: 280px;
+        top: 170px;
+      }
+    }
+  }
+  
+  
